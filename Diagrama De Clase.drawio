@@ -1,9 +1,37 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" version="25.0.3">
-  <diagram name="Página-1" id="UyDmIMOKHdZ-Lj4BwbpG">
-    <mxGraphModel>
+  <diagram name="Diagrama de Clases" id="UyDmIMOKHdZ-Lj4BwbpG">
+    <mxGraphModel dx="999" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jBuS8J2EX25bI23QQKEZ-1" value="&lt;&lt;Clase&gt;&gt;&#xa;Usuario&#xa;- idUsuario: int&#xa;- nombre: String&#xa;- email: String&#xa;- tipo: String&#xa;----------------------------------&#xa;+ registrar(): void&#xa;+ editar(): void&#xa;+ eliminar(): void" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="90" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jBuS8J2EX25bI23QQKEZ-2" value="&lt;&lt;Clase&gt;&gt;&#xa;Alumno&#xa;- matricula: String&#xa;----------------------------------&#xa;+ solicitarPrestamo(): void" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="90" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="jBuS8J2EX25bI23QQKEZ-3" value="&lt;&lt;Clase&gt;&gt;&#xa;Profesor&#xa;- numeroEmpleado: String&#xa;----------------------------------&#xa;+ solicitarPrestamo(): void" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="290" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="jBuS8J2EX25bI23QQKEZ-4" value="&lt;&lt;Clase&gt;&gt;&#xa;Libro&#xa;- idLibro: int&#xa;- titulo: String&#xa;- autor: String&#xa;- disponible: boolean&#xa;----------------------------------&#xa;+ registrar(): void&#xa;+ editar(): void&#xa;+ eliminar(): void" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="390" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jBuS8J2EX25bI23QQKEZ-5" value="&lt;&lt;Clase&gt;&gt;&#xa;Prestamo&#xa;- idPrestamo: int&#xa;- fechaPrestamo: Date&#xa;- fechaDevolucion: Date&#xa;----------------------------------&#xa;+ registrar(): void&#xa;+ devolver(): void" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="240" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jBuS8J2EX25bI23QQKEZ-6" edge="1" parent="1" source="jBuS8J2EX25bI23QQKEZ-1" target="jBuS8J2EX25bI23QQKEZ-2">
+          <mxGeometry relative="1" as="geometry" />
+          <Object edgeStyle="orthogonalEdgeStyle" as="mxCell" />
+        </mxCell>
+        <mxCell id="jBuS8J2EX25bI23QQKEZ-7" edge="1" parent="1" source="jBuS8J2EX25bI23QQKEZ-1" target="jBuS8J2EX25bI23QQKEZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBuS8J2EX25bI23QQKEZ-8" edge="1" parent="1" source="jBuS8J2EX25bI23QQKEZ-4" target="jBuS8J2EX25bI23QQKEZ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBuS8J2EX25bI23QQKEZ-9" edge="1" parent="1" source="jBuS8J2EX25bI23QQKEZ-1" target="jBuS8J2EX25bI23QQKEZ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
